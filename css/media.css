@@ -1,0 +1,38 @@
+
+
+@media (max-width: 991px) { /*laptop* ================= */
+
+	.main__inner {
+		padding-top: 30px;
+		gap: 50px;
+
+		align-items: center;
+	}
+
+	.timer, .todo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.todo__inner {
+		min-width: 450px;
+	}
+
+
+}
+
+@media (max-width: 767px) { /*tablet* ================= */
+
+}
+
+@media (max-width: 575px) { /*phone* ================= */
+
+	.timer__clock {
+		font-size: 75px;
+	}
+
+	.todo__inner {
+		min-width: 350px;
+	}
+}

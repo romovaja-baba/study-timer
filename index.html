@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Study Timer</title>
+
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<!-- FAVICON -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+
+	<!-- HEADER -->
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<!-- <div class="header__img">
+					<img src="img/icons/header_icon.png" height="70px">
+				</div> -->
+				<nav class="nav">
+					<a href="#" class="nav__item">timer</a>
+					<a href="#" class="nav__item">statistics</a>
+					<a href="#" class="nav__item">profile</a>
+				</nav>
+			</div> <!-- header__inner -->
+		</div> <!-- container -->
+	</header>
+
+
+
+	<!-- MAIN -->
+
+	<main class="main">
+		<div class="container">
+			<div class="main__inner">
+				<div class="timer">
+					<div class="timer__inner">
+						<h2 class="timer__clock" id="timer__clock">
+							<span class="clock__numbers" id="clock__hours">00</span>:<span class="clock__numbers" id="clock__minutes">00</span>:<span class="clock__numbers" id="clock__seconds">00</span>
+						</h2>
+						<div class="timer__description" id="timer__description">
+						start studying now!
+						</div>
+					</div>
+					<div class="timer__buttons">
+						<button class="timer__btn" id="start-button">play</button>
+						<button class="timer__btn hidden" id="pause-button">pause</button>
+						<button class="timer__btn" id="stop-button">reset</button>
+					</div>
+				</div>
+
+				<div class="todo">
+					<div class="todo__inner">
+						<div id="todo__newtask" class="todo__newtask">
+							<input type="text" name="New Task" placeholder="enter a task to be done..." id="todo__input">
+							<button id="todo__addbtn" class="todo__addbtn"><img src="img/icons/add.png" alt="" height="20px"></button>
+						</div>
+						<div class="todo__list" id="todo__list">
+							<div class="todo__task">
+								<div class="task__name">
+									something
+								</div>
+								<div class="task__deletebtn">
+									<img src="img/icons/delete-button.png">
+								</div>
+							</div>
+						</div>
+					</div> <!-- todo__inner -->
+				</div> <!-- todo -->
+			</div> <!-- main__inner -->
+		</div> <!-- container -->
+	</main>
+
+	<!-- JAVASCRIPT -->
+
+	<script src="js/timer.js"></script>
+	<script src="js/todo.js"></script>
+
+
+</body>
+
+</html>
